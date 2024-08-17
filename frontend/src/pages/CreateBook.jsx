@@ -19,7 +19,8 @@ const CreateBook = () => {
     const data={
       title,
       author,
-      publishYear
+      publishYear,
+      about
     };
     setLoading(true);
     axios.post('https://bookstore-backend-lime.vercel.app/books',data)

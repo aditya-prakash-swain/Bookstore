@@ -72,7 +72,7 @@ router.put("/:id", async (request, response) => {
       !request.body.about
     ) {
       return response.status(400).send({
-        message: "Send all required fields: title, author, publishYear",
+        message: "Send all required fields: title, author, publishYear,about",
       });
     }
 
