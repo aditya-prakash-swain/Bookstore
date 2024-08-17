@@ -30,7 +30,7 @@ const BookSingleCard = ({ book }) => {
       </div>
       <div className="flex justify-center items-center gap-x-2">
         <BsFillQuestionSquareFill className="text-red-300 text-2xl" />
-        <h2 className="my-1">{book.about}</h2>
+        <h2 className="my-1 justify-center">{book.about}</h2>
       </div>
       <div className="flex justify-center items-center gap-x-2 mt-4 p-4">
         <BiShow
