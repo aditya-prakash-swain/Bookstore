@@ -9,17 +9,17 @@ const app = express();
 app.use(express.json()); // Parse incoming requests data as JSON
 
 //middleware for handling cor policys
-app.use(cors());//allow all origins with default cors
-// app.use(cors({
-//     origin: "http://localhost:5555",
-//     method: ['GET', 'POST', 'PUT', 'DELETE'],
-//     allowedHeaders: ['Content-Type']
+//app.use(cors());//allow all origins with default cors
+app.use(cors({
+    origin: "https://bookstore-mu-six.vercel.app",
+    method: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type']
 
-// }
-// ))
+}
+))
 app.get('/', (request, response) => {
     console.log(request);
-    return response.status(234).send('Welcome to MERN Stack Tutorial');
+    return response.status(234).send('Welcome to Bookstore');
 });
 
 app.use('/books', booksRoute);

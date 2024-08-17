@@ -21,7 +21,7 @@ const CreateBook = () => {
       publishYear
     };
     setLoading(true);
-    axios.post('http://localhost:5555/books',data)
+    axios.post('https://bookstore-backend-lime.vercel.app/books',data)
     .then(()=>{
       setLoading(false);
       enqueueSnackbar('book created successfully', {variant: 'success'});
