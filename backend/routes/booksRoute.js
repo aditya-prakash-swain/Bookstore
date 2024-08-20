@@ -3,7 +3,7 @@ import { Book } from "../models/bookModel.js";
 
 const router = express.Router();
 
-//route for  getting all books in the database
+//route for  storing all books in the database
 router.post("/", async (request, response) => {
   try {
     if (
